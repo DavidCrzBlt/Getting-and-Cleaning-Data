@@ -56,3 +56,4 @@ for(each in 1:30)
 # Here I reincorporate the column that I took off
 
 d <- merge(final_data,activity,by.x="Activity.Number",by.y="Activity.Number",all=TRUE)
+write.table(d,file = "C:/Users/david/Documents/R/Coursera Module 2/UCI HAR Dataset/tidy_data.txt",row.names=FALSE)
